@@ -30,8 +30,11 @@ var filterableTypes = []events.ResourceType{
 	events.OrgUnitResource,
 	events.GroupResource,
 	events.IdentityResource,
+	events.ProductResource,
 	events.FindingResource,
 	events.FindingTypeResource,
+	events.ArtifactResource,
+	events.ArtifactInstanceResource,
 }
 
 func parseOneResourceType(token string) (events.ResourceType, error) {

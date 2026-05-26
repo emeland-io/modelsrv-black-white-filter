@@ -69,7 +69,7 @@ func Run(ctx context.Context, cfg Config) error {
 	}
 	b := bundle.Backend()
 
-	if err := endpoint.StarWebListener(bundle.Model, b.GetEventManager(), cfg.ListenAddr); err != nil {
+	if err := endpoint.StartWebListener(bundle.Model, b.GetEventManager(), cfg.ListenAddr); err != nil {
 		return fmt.Errorf("web listener: %w", err)
 	}
 
