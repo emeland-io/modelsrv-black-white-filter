@@ -1,0 +1,12 @@
+# Default filter configuration for modelsrv-black-white-filter.
+# Whitelist = only these resource kinds / annotation keys are considered (if a list is non-empty).
+# Blacklist = remove these after the whitelist step.
+# Semantics match the previous CLI: whitelist first, then blacklist.
+
+filter:
+  whitelist:
+    resources: []
+    annotations: []
+  blacklist:
+    resources: []
+    annotations: []
